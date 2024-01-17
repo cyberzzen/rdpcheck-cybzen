@@ -11,11 +11,11 @@ WARNING - always get written permission before you test usernames and passwords 
 1. Create a KALI image on an SD-CARD using balenaEtcher. There is a stable KALI image for Raspberry Pi ARM
 2. Boot the image on your Raspberry Pi
 3. Login as root
-4. Add a user using adduser and switch that user
+4. Add a user using adduser and switch to that user
 5. Open a standard command prompt
 6. Download rdpcheck-cybzen and userpasslist
 7. Edit rdpcheck-cybzen and change host="x.x.x.x" to your rdp host IP or DNS name
-8. Edit userpasslist and added usernames(s) and password(s) you wish to test
-9. Run rdpcheck-cybzen .\rdpcheck-cybzen userpasslist
+8. Edit userpasslist and add usernames(s) and password(s) you wish to test
+9. Run rdpcheck-cybzen: .\rdpcheck-cybzen userpasslist
 10. A successful connection will end with the host window showing
 
