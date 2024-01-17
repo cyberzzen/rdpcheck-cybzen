@@ -1,0 +1,40 @@
+
+#!/bin/bash
+# rdpcheck-cybzen v0.1 
+# by cyberzzen
+
+# Check for filename. Ths will contain username(s) <space> password(s)
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 userpasslist"
+  exit 1
+fi
+
+# Set remote rdp host and domain(optional)
+
+host="x.x.x.x"
+domain=""
+
+# Loop through the file of username(s) and password(s)
+
+while read -r user pass; do
+  
+# Try to connect with xfreerdp
+
+  echo "Trying to connect as $user..."
+  xfreerdp /v:$host /d:$domain /u:$user /p:$pass /cert-ignore
+
+# Check exit status
+
+  if [ $? -eq 0 ]; then
+    # Connection successful
+    echo "Connection successful!"
+    break
+  else
+
+# Connection failed
+
+    echo "Connection failed."
+  fi
+
+done < "$1"
