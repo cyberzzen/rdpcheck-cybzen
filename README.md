@@ -8,7 +8,7 @@ WARNING - always get written permission before you test usernames and passwords 
 
 # Instructions
 
-1. Create a KALI image on an SD-CARD using balenaEtcher. There us a stable KALI image for Raspberry Pi ARM
+1. Create a KALI image on an SD-CARD using balenaEtcher. There is a stable KALI image for Raspberry Pi ARM
 2. Boot the image on your Raspberry Pi
 3. Login as root
 4. Add a user using adduser and switch that user
