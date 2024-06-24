@@ -16,6 +16,6 @@ WARNING - always get written permission before you test usernames and passwords 
 6. Download rdpcheck-cybzen and userpasslist
 7. Edit rdpcheck-cybzen and change host="x.x.x.x" to your rdp host IP or DNS name
 8. Edit userpasslist and add usernames(s) and password(s) you wish to test
-9. Run rdpcheck-cybzen: .\rdpcheck-cybzen userpasslist
+9. Run rdpcheck-cybzen: ./rdpcheck-cybzen userpasslist
 10. A successful connection will end with the host window showing
 
